@@ -1,0 +1,44 @@
+/* Main app styles - mostly using Tailwind */
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Smooth transitions for all interactive elements */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Custom scrollbar for roll history */
+.space-y-2::-webkit-scrollbar {
+  width: 8px;
+}
+
+.space-y-2::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.space-y-2::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.space-y-2::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
